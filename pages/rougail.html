@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+
+<!--données relatives à la page-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Rouguail saucisses</title>
+  <link rel="stylesheet" href="..\css\style.css">
+  <meta name="viewport" content="width=device-width; maximum-scale=1; minimum-scale=1;" />
+</head>
+<!--fin des données relatives à la page-->
+
+
+<!--corps de la page-->
+
+<body>
+
+
+  <!--bannière-->
+  <header>
+    <img class="banner" src="..\pictures\banner.png" alt="banner">
+  </header>
+  <!--fin de la bannière-->
+
+
+  <!--barre de navigation-->
+  <nav>
+    <ul>
+      <li><a href="..\index.html">Accueil</a></li>
+      <li><a href="map.html">Plan du site</a></li>
+      <li><a href="#">Recettes</a>
+        <ul class="deroule-contenu">
+          <li><a href="lasagnes.html">Lasagnes</a></li>
+          <li><a href="rougail.html">Rouguail saucisses</a></li>
+          <li><a href="PCCCP.html">Poulet coco curry</a></li>
+          <li><a href="QQA.html">Quatre-quarts amendes</a></li>
+        </ul>
+      </li>
+      <li><a href="interest.html">Intérêts</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="about.html">À propos</a></li>
+    </ul>
+    </li>
+    </ul>
+
+  </nav>
+  <!--fin de la barre de navigation-->
+
+
+
+  <!--partie principale-->
+  <main>
+
+    <!--article principal-->
+    <article>
+      <h2>Rouguail saucisses</h2>
+
+
+          <img src="..\pictures\Rougail-1.jpg" style="width:100%"></a>
+
+
+      <!--saut de ligne-->
+      <br><br>
+
+      <h3>Étape 1</h3>
+      <p>Faire cuire les saucisses 10 mins dans de l'eau bouillante.</p>
+      <h3>Étape 2</h3>
+      <p>Couper les saucisses en morceau d'environ 1,5cm de large.</p>
+      <h3>Étape 3</h3>
+      <p>Faire roussir les saucisses dans un faitout sans matière grasse (le gras de saucisses suffira).</p>
+      <h3>Étape 4</h3>
+      <p>Une fois bien roussies, réserver les saucisses pour plus tard.</p>
+      <h3>Étape 5</h3>
+      <p>Dans le même faitout, faire revenir les oignons émincés, l'ail, le sel, le poivre, le piment et le thym avec l'huile d'olives.</p>
+      <h3>Étape 6</h3>
+      <p>Ajouter le curcuma et laisser cuire encore 2 mins.</p>
+      <h3>Étape 7</h3>
+      <p>Ajouter les tomates coupées en dés, un peu de sel et de poivre.</p>
+      <h3>Étape 8</h3>
+      <p>Laisser mijoter à couvert et à feu moyen pendant 15 mins.</p>
+      <h3>Étape 9</h3>
+      <p>Si vous voyez que la sauce à trop réduite, ajouter un demi verre d'eau.</p>
+      <h3>Étape 10</h3>
+      <p>Corrigez l'assaisonnement et laisser réduire et compoter à feu doux et sans couvercle encore une dizaine de minutes.</p>
+      <h3>Étape 11</h3>
+      <p>Servir dans une assiète plate accompagné d'un peu de riz blanc et d'haricots rouges ou de fèves. Bonne dégustation.</p>
+    </article>
+    <!--fin de l'article principal-->
+
+    <!--section à coté-->
+    <!---->
+    <aside>
+      <h2>Ingrédients</h2>
+        <li>4 oignons</li>
+        <li>4 tomates</li>
+        <li>6 saucices de porc</li>
+        <li>6 gousse d'ail</li>
+        <li>1/2 carotte</li>
+        <li>1 belle branche de thym</li>
+        <li>1 feuille de laurier</li>
+        <li>1 cac de curcuma</li>
+        <li>1 cac d'huile d'olive</li>
+        <li>1 piment oiseau</li>
+        <li>Sel</li>
+        <li>Poivre</li>
+
+
+    </aside>
+    <!--fin de la section à coté-->
+
+  </main>
+  <!--fin de la partie principale-->
+
+
+
+  <!--script du slider-->
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+  <!--fin du script du slider-->
+
+  <!--Pied de page-->
+  <footer>
+    <center>
+      <a href="map.html">Plan du site</a> |
+      <a href="mailto:kris.lorto@gmail.com">Contactez-nous</a>
+
+      <p>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="https://www.facebook.com/profile.php?id=100075561489166" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/KrisLto" class="fa fa-twitter"></a>
+        <a href="http://www.linkedin.com/in/christophe-lorto-252825227" class="fa fa-linkedin"></a>
+      </p>
+      <p>©Tous droits reversés. | Ce site est supporté par les navigateurs suivants: <a href="https://www.google.com/intl/fr_ca/chrome/">Chrome</a>, <a href="https://www.opera.com/fr">Opéra</a>, <a href="https://www.microsoft.com/fr-fr/edge">Edge</a>
+        et <a href="https://www.mozilla.org/fr/firefox/new/">FireFox</a>.</p>
+    </center>
+  </footer>
+  <!--fin du pied de page-->
+
+
+</body>
+<!--fin corps de la page-->
+
+</html>

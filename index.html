@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+
+<!--données relatives à la page-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Les bonnes recette de Tonton Chris</title>
+  <link rel="stylesheet" href="css\style.css">
+  <meta name="viewport" content="width=device-width; maximum-scale=1; minimum-scale=1;" />
+</head>
+<!--fin des données relatives à la page-->
+
+
+<!--corps de la page-->
+
+<body>
+
+
+  <!--bannière-->
+  <header>
+    <img class="banner" src="pictures\banner.png" alt="banner">
+  </header>
+  <!--fin de la bannière-->
+
+
+  <!--barre de navigation-->
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="pages\map.html">Plan du site</a></li>
+      <li><a href="#">Recettes</a>
+        <ul class="deroule-contenu">
+          <li><a href="pages\lasagnes.html">Lasagnes</a></li>
+          <li><a href="pages\rougail.html">Rouguail saucisses</a></li>
+          <li><a href="pages\PCCCP.html">Poulet coco curry</a></li>
+          <li><a href="pages\QQA.html">Quatre-quarts amendes</a></li>
+        </ul>
+      </li>
+      <li><a href="pages\interest.html">Intérêts</a></li>
+      <li><a href="pages\faq.html">FAQ</a></li>
+      <li><a href="pages\about.html">À propos</a></li>
+    </ul>
+    </li>
+    </ul>
+
+  </nav>
+  <!--fin de la barre de navigation-->
+
+
+
+  <!--partie principale-->
+  <main>
+
+    <!--article principal-->
+    <article>
+      <h2>Bienvenu sur les bonnes recette de Tonton Chris.</h2>
+      <br>
+      <p>Grand amateur de bons "petits" plats familiaux, je vous expose ici quelques-unes de mes recettes de cuisine favorites.</p>
+      <p>Ce sont toutes des recettes familiales et populaires donc à réaliser pour un minimum de 4 personnes et à déguster en famille ou entre amis.</p>
+      <p>Pour une ou 2 personnes, je vous conseillerais de préparer pour 4, puis de mettre le restant au réfrigérateur ou au congélateur pour plus tard, plutôt que de diviser les quantités. Le fait de les réchauffer le lendemain ou après, ne les
+        rendra que meilleurs.</p>
+
+
+      <!--saut de ligne-->
+      <br>
+
+
+
+
+
+    </article>
+    <!--fin de l'article principal-->
+
+  </main>
+  <!--fin de la partie principale-->
+
+
+  <!--slider-->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <!--<div class="numbertext">1 / 4</div>-->
+      <a href="pages\rougail.html">
+        <img src="pictures\Rougail-1.jpg" style="width:100%"></a>
+      <div class="text">Rougail saucisses</div>
+      <div class="backgound-text">Rougail saucisses</div>
+    </div>
+
+    <div class="mySlides fade">
+      <!--<div class="numbertext">2 / 4</div>-->
+      <a href="pages\PCCCP.html">
+        <img src="pictures\PCCCP-15.jpg" style="width:100%"></a>
+      <div class="text">Poulet coco curry</div>
+      <div class="backgound-text">Poulet coco curry</div>
+    </div>
+
+    <div class="mySlides fade">
+      <!--<div class="numbertext">3 / 4</div>-->
+      <a href="pages\lasagnes.html">
+        <img src="pictures\Lasagnes-17.jpg" style="width:100%"></a>
+      <div class="text">Lasagnes</div>
+      <div class="backgound-text">Lasagnes</div>
+    </div>
+
+    <div class="mySlides fade">
+      <!--<div class="numbertext">4 / 4</div>-->
+      <a href="pages\QQA.html">
+        <img src="pictures\QQA-19.jpg" style="width:100%"></a>
+      <div class="text">Quatre-quarts amendes</div>
+      <div class="backgound-text">Quatre-quarts amendes</div>
+    </div>
+
+  </div>
+  <br>
+
+  <!--fin du slider-->
+
+
+  <!--Pied de page-->
+  <footer>
+    <center>
+      <a href="pages\map.html">Plan du site</a> |
+      <a href="mailto:kris.lorto@gmail.com">Contactez-nous</a>
+
+      <p>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="https://www.facebook.com/profile.php?id=100075561489166" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/KrisLto" class="fa fa-twitter"></a>
+        <a href="http://www.linkedin.com/in/christophe-lorto-252825227" class="fa fa-linkedin"></a>
+      </p>
+      <p>©Tous droits reversés. | Ce site est supporté par les navigateurs suivants: <a href="https://www.google.com/intl/fr_ca/chrome/">Chrome</a>, <a href="https://www.opera.com/fr">Opéra</a>, <a href="https://www.microsoft.com/fr-fr/edge">Edge</a>
+        et <a href="https://www.mozilla.org/fr/firefox/new/">FireFox</a>.</p>
+    </center>
+  </footer>
+  <!--fin du pied de page-->
+
+
+
+  <!--script du slider-->
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+  </script>
+  <!--fin du script du slider-->
+
+</body>
+<!--fin corps de la page-->
+
+</html>
